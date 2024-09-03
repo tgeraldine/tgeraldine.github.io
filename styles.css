@@ -2,6 +2,7 @@
 
 html, body {
     margin: 0;
+    min
 }
 
 nav {
@@ -11,6 +12,7 @@ nav {
     background: repeating-linear-gradient(-0.1turn, transparent, #141414 3px),
     repeating-linear-gradient(-0.35turn, transparent, #474747 3px);
     background-color: rgb(48, 48, 48);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }   
@@ -28,30 +30,37 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: repeating-linear-gradient(0.1turn, transparent, #1f1f1f 3px)
-    , repeating-linear-gradient(0.35turn, transparent, #757575 3px);
+    background: repeating-linear-gradient(0.1turn, transparent, #1f1f1f 3px),
+    repeating-linear-gradient(0.35turn, transparent, #757575 3px);
     background-color: rgb(63, 63, 63);
 }
 
 #brand-card {
     width: 400px;
     height: 550px;
-    backdrop-filter: blur(0.8px);
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(110, 110, 110, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(0.6px);
+    background-color: rgba(66, 66, 66, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(85, 85, 85, 0.3);
     border-radius: 10px;
     
 }
 
 #perfil {
-    width: 25vw;
-    height: 25vw;
+    width: 70%;
+    aspect-ratio: 1;
     border-radius: 100%;
 }
 
 h1 {
+    margin: 0;
+    padding: 0;
     color: white;
+    text-align: center;
     font-family: "Montserrat", sans-serif;
     font-size: 4rem;
 }
