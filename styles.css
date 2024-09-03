@@ -4,32 +4,54 @@ html, body {
     margin: 0;
 }
 
+nav {
+    height: 6.5vh;
+    position: relative;
+    color: rgb(241, 241, 241);
+    background: repeating-linear-gradient(-0.1turn, transparent, #141414 3px),
+    repeating-linear-gradient(-0.35turn, transparent, #474747 3px);
+    background-color: rgb(48, 48, 48);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}   
+
 #container {
     min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
 }
 
 #brand-container {
     width: 100%;
-    height: 100vh;
+    height: 93.5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#8511F2, #CF11F2);
+    background: repeating-linear-gradient(0.1turn, transparent, #1f1f1f 3px)
+    , repeating-linear-gradient(0.35turn, transparent, #757575 3px);
+    background-color: rgb(63, 63, 63);
+}
+
+#brand-card {
+    width: 400px;
+    height: 550px;
+    backdrop-filter: blur(0.8px);
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(110, 110, 110, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    
 }
 
 #perfil {
     width: 25vw;
     height: 25vw;
-    border: 4px solid;
-    border-color: black;
     border-radius: 100%;
 }
 
 h1 {
+    color: white;
     font-family: "Montserrat", sans-serif;
     font-size: 4rem;
 }
