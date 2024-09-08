@@ -4,13 +4,15 @@
 
 html,
 body {
+    font-family: "Bebas Neue", sans-serif;
     margin: 0;
 }
 
 nav {
-    height: 6.5vh;
-    align-items: center;
+    display: flex;
     position: relative;
+    height: 6.5vh;
+    justify-content: right;
     color: rgb(241, 241, 241);
     background-color: rgb(36, 36, 36);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
@@ -18,16 +20,34 @@ nav {
 }
 
 #nav-menu {
-    width: 100%;
+    margin: 0;
+    padding: 4px;
     display: inline-block;
+    align-self: center;
     justify-content: right;
     list-style-type: none;
-    gap: 4em;
+}
+
+.menu-item {
+    margin: 0 12px;
+    padding: 0;
+    display: inline-block;
 }
 
 .menu-button {
-    height: 150%;
+    display: flex;
+    height: 60%;
     aspect-ratio: 3;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.4), -1px -1px 4px rgba(255, 255, 255, 0.1);
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+.menu-button:hover {
+    background-color: #252525;
+    cursor: pointer;
 }
 
 
@@ -47,7 +67,7 @@ nav {
     justify-content: top;
     background: repeating-linear-gradient(0.1turn, transparent, #1f1f1f 3px),
         repeating-linear-gradient(0.35turn, transparent, #757575 3px);
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(43, 43, 43);
 }
 
 #brand-card {
@@ -77,9 +97,8 @@ h1 {
     line-height: 75%;
     color: rgb(255, 255, 255);
     text-align: left;
-    font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 10rem;
+    font-size: 1400%;
     text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
 }
